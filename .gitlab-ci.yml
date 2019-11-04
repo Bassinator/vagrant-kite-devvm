@@ -1,6 +1,3 @@
-tags:
-  - vagrant
-
 stages:
   - build
   - package
@@ -9,8 +6,15 @@ build-vm:
   stage: build
   script:
     - vagrant up
+  tags:
+    - vagrant
+
 
 create-box:
   stage: package
   script:
     - vagrant package --output kite-dev.box
+  tags:
+    - vagrant
+
+

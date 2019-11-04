@@ -9,4 +9,5 @@ build-vm:
 
 create-box:
   stage: package
+  script:
     - vagrant package --output kite-dev.box

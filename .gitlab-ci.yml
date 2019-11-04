@@ -1,0 +1,12 @@
+stages:
+  - build
+  - package
+
+build-vm:
+  stage: build
+  script:
+    - vagrant up
+
+create-box:
+  stage: package
+    - vagrant package --output kite-dev.box

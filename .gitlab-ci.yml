@@ -7,10 +7,6 @@ build-vm:
   script:
     - vagrant up
     - vagrant halt
-  artifacts:
-    paths:
-    - kide-dev.box
-    expire_in: 1 day
   tags:
     - vagrant
   only:

@@ -7,7 +7,7 @@ build-vm:
   script:
     - vagrant up
     - vagrant halt
-    - IF EXIST kite-dev.box del hite-dev.box
+    - if (Test-Path kite-dev.box) { Remove-Item kide-dev.box }
     - vagrant package --output kite-dev.box
   artifacts:
     paths:

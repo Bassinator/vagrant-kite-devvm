@@ -15,8 +15,9 @@ build-vm:
     expire_in: 1 day
   tags:
     - vagrant
-  except:
-    - branches
+  only:
+    - master
+    - tags
 
 publish-vm:
   stage: publish

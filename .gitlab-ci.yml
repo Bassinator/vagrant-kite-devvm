@@ -11,7 +11,7 @@ build-vm:
     - vagrant package --output kite-dev.box
   artifacts:
     paths:
-    - kide-dev.box
+    - kite-dev.box
     expire_in: 1 day
   tags:
     - vagrant

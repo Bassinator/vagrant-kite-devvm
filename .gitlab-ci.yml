@@ -29,12 +29,3 @@ publish-vm:
     - vagrant
   only:
     - tags
-
-# create-box:
-#   stage: package
-#   script:
-#     - vagrant package --output kite-dev.box
-#   tags:
-#     - vagrant
-
-

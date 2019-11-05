@@ -16,9 +16,9 @@ Vagrant.configure("2") do |config|
   config.ssh.password = "raspberry"
   config.ssh.username = "pi"
 
-  config.vm.provision "shell", inline: "ansible-galaxy install kevincoakley.anaconda"
+#  config.vm.provision "shell", inline: "ansible-galaxy install kevincoakley.anaconda"
 
-  config.vm.provision "shell", inline: "ansible-playbook --connection=local --inventory 127.0.0.1, /vagrant/main.yml"
+#  config.vm.provision "shell", inline: "ansible-playbook --connection=local --inventory 127.0.0.1, /vagrant/main.yml"
 
   # config.vm.provision "shell", inline: <<-SHELL
   #   apt-get update

@@ -20,7 +20,7 @@ publish-vm:
     - if (Test-Path kite-dev.box) { Remove-Item kide-dev.box }
     - vagrant package --output kite-dev.box
     - vagrant cloud auth login
-    - vagrant cloud publish einfachIT/kite-vm $CI_COMMIT_TAG virtualbox kite-dev.box --release 
+    - vagrant cloud publish einfachIT/kite-vm $CI_COMMIT_TAG virtualbox kite-dev.box --release --force
   tags:
     - vagrant
   only:

@@ -15,9 +15,13 @@ Vagrant.configure("2") do |config|
   config.ssh.password = "raspberry"
   config.ssh.username = "pi"
 
-#  config.vm.provision "shell", inline: "ansible-galaxy install kevincoakley.anaconda"
+  config.vm.provision "shell", inline: "ansible-galaxy role install --force -r /vagrant/requirements.yml"
 
-#  config.vm.provision "shell", inline: "ansible-playbook --connection=local --inventory 127.0.0.1, /vagrant/main.yml"
+  config.vm.provision "shell", inline: "ansible-playbook --connection=local --inventory 127.0.0.1, /vagrant/main.yml"
+
+
+  config.vm.provision "shell", inline: "sudo cp /vagrant/splash.png /usr/share/plymouth/themes/pix/splash.png"
+
 
   # config.vm.provision "shell", inline: <<-SHELL
   #   apt-get update

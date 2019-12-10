@@ -1,1 +1,3 @@
 - src: bassinator.localisation
+- src: bassinator.jupyter
+- src: bassinator.conda

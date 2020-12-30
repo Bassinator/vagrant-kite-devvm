@@ -5,6 +5,7 @@ Vagrant.configure("2") do |config|
   config.vm.box = "Bassualdo/rpd-i386-buster"
   config.vm.box_version = "1.1"
   config.vm.provider "virtualbox" do |vb|
+    vb.name = "kite-devvm"
     # Display the VirtualBox GUI when booting the machine
     vb.gui = true
     # Customize the amount of memory on the VM:

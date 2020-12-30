@@ -1,6 +1,6 @@
 - hosts: all
   roles:
-    - { role: bassinator.localisation , loc_timezone: "Asia/Kabul", keyboard_layout: "us", keyboard_variant: "en" }
-#    - { role: bassinator.localisation , loc_timezone: "Europe/Berlin", keyboard_layout: "ch", keyboard_variant: "de" }
-    - { role: bassinator.conda, conda_build: "2018.12", conda_arch: "Linux-x86" }
+#    - { role: bassinator.localisation , loc_timezone: "Asia/Kabul", keyboard_layout: "us", keyboard_variant: "en" }
+   - { role: bassinator.localisation , loc_timezone: "Europe/Berlin", keyboard_layout: "ch", keyboard_variant: "de" }
+#    - { role: bassinator.conda, conda_build: "2018.12", conda_arch: "Linux-x86" }
 #    - { role: bassinator.jupyter }
